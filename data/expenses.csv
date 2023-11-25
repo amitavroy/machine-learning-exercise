@@ -1,0 +1,22 @@
+date,expense_type,payment_method,amount
+2023-04-13,Outside Food,Net Banking,481.00
+2023-04-13,Household,Credit Card,2000.00
+2023-04-14,Outside Food,Net Banking,400.00
+2023-04-14,Travel,Net Banking,560.00
+2023-04-14,Household,Net Banking,2800.00
+2023-04-06,Household,Cash,600.00
+2023-04-06,Household,Net Banking,338.00
+2023-04-12,Travel,Net Banking,300.00
+2023-04-11,Misc,Net Banking,90.00
+2023-04-08,Outside Food,Net Banking,125.00
+2023-04-08,Outside Food,Net Banking,90.00
+2023-04-08,Misc,Net Banking,1000.00
+2023-04-08,Household,Net Banking,200.00
+2023-04-09,Household,Net Banking,950.00
+2023-04-06,Household,Cash,600.00
+2023-04-03,Outside Food,Net Banking,557.00
+2023-04-03,Travel,Cash,260.00
+2023-04-06,Household,Cash,145.00
+2023-04-06,Travel,Cash,52.00
+2023-04-07,Outside Food,Net Banking,30.00
+
