@@ -41,3 +41,6 @@ print(consoleStyle)
 
 # Raw string
 print(r"C:\Users\timberlake\notes.txt")
+
+# Without plus, concatenate
+print("My " "name " "is " "Amitav Roy")
