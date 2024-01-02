@@ -2,6 +2,7 @@
 
 1. Like PHP, 1 & 0 are `true` and `false` respectively.
 1. We have straight operators for `in` and `not in`
+1. xyz
 
 ## Loops
 
