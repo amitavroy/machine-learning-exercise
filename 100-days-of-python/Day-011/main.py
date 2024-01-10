@@ -1,7 +1,7 @@
 def helloWorld(name):
     print("Hello there {}".format(name))
 
-def is_palindrome(string):
+def is_palindrome(string: str) -> bool:
     """
     Checks if the provided string is a palindrome or not.
     :param string: The string that will be checked whether it is Palindrome or not.
