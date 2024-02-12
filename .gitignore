@@ -2,3 +2,4 @@ __pycache__
 data/stackoverflow
 data/ETH_1h.csv
 data/sample.pdf
+*.pkl
