@@ -3,3 +3,5 @@ data/stackoverflow
 data/ETH_1h.csv
 data/sample.pdf
 *.pkl
+.venv
+.env
