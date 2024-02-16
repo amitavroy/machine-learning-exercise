@@ -7,6 +7,7 @@
 # pip install sentence_transformers
 
 import bs4
+import sys
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import WebBaseLoader
 
@@ -58,18 +59,36 @@ docs = db.similarity_search(query)
 # print(wrap_text_preserve_newlines(str(docs[0].page_content)))
 
 import os
-os.environ["HUGGINGFACEHUB_API_TOKEN"] = "HUGGINGFACEHUB_API_TOKEN"
-from langchain.chains.question_answering import load_qa_chain
-from langchain_community.llms import HuggingFaceHub
+from langchain_community.llms import Ollama
+from langchain_core.prompts import ChatPromptTemplate
+llm = Ollama(model="llama2")
 
-llm=HuggingFaceHub(repo_id="google/flan-t5-xl", model_kwargs={"temperature":0, "max_length":512})
+prompt = ChatPromptTemplate.from_messages([
+    ("system", "You are world class technical documentation writer."),
+    ("user", "{input}")
+])
 
-from langchain import hub
-prompt = hub.pull("rlm/rag-prompt")
+chain = prompt | llm
 
-example_messages = prompt.invoke(
-    {"context": docs, "question": query}
-).to_messages()
-example_messages
+chain.invoke({"input": "how can langsmith help with testing?"})
+
+from langchain_core.output_parsers import StrOutputParser
+
+output_parser = StrOutputParser()
+
+chain = prompt | llm | output_parser
+
+# chain = load_qa_chain(llm, chain_type="stuff")
+
+# docs = db.similarity_search(query)
+# chain.run(input_documents=docs, question=query)
+
+# from langchain import hub
+# prompt = hub.pull("rlm/rag-prompt")
+
+# example_messages = prompt.invoke(
+#     {"context": docs, "question": query}
+# ).to_messages()
+# example_messages
 
 print(example_messages[0].content)
