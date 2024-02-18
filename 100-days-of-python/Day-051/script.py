@@ -1,3 +1,5 @@
+# Reference video: https://www.youtube.com/watch?v=PvsMg6jFs8E&ab_channel=MuhammadMoin
+
 from langchain.document_loaders.csv_loader import CSVLoader
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings import HuggingFaceEmbeddings
