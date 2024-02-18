@@ -5,3 +5,5 @@ data/sample.pdf
 *.pkl
 .venv
 .env
+*.bin
+*.faiss
