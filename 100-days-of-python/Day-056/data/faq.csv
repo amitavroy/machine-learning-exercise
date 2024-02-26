@@ -19,3 +19,4 @@
 "Handle events and listeners?","Define events to signal specific actions. Create listeners to react to those events and perform actions like sending notifications or updating data."
 "Handle multiple languages?","Use Laravel's localization features to define translations in language files. Use middleware or Blade directives to switch languages based on user preferences or URL parameters."
 "Use Blade templating?","Blade is Laravel's templating engine. It allows embedding PHP code within HTML for dynamic content and data manipulation. Use Blade directives and components for reusable UI elements."
+"Can we build a Laravel binary?","Yes, now we can run Laravel application using a binary. We can use FrankenPHP a new technology which allows us to package the entire application as a standalone binary. We do not even need to install PHP and Apache on that machine to run the application."
